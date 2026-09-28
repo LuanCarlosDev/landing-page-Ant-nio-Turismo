@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antônio Carlos - Consultoria e Curadoria Exclusiva em Viagens Nacionais pelo Brasil. Hotéis de luxo, aéreo, logística privativa e roteiros sob medida.">
+  <meta name="keywords" content="agente de viagem brasil, turismo de luxo nacional, consultoria de viagens antônio carlos, roteiros personalizados brasil, trancoso, noronha, rio de janeiro, lençóis maranhenses">
+  <meta name="author" content="Antônio Carlos Viagens">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antônio Carlos | Consultoria de Viagens Nacionais pelo Brasil">
+  <meta property="og:description" content="O Brasil mais extraordinário, desenhado sob medida com a experiência e curadoria do consultor Antônio Carlos.">
+  <meta property="og:image" content="assets/img/hero-bg.jpg">
+
+  <title>Antônio Carlos | Consultoria de Viagens Nacionais • Turismo Exclusivo no Brasil</title>
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
+  <!-- Folhas de Estilo - Clean Architecture -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. CABEÇALHO & BARRA SUPERIOR (TOP BAR)
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar__info">
+          <div class="top-bar__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+            </svg>
+            <span>Consultoria Especializada em Território Nacional</span>
+          </div>
+          <div class="top-bar__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Atendimento Personalizado Direto com o Agente</span>
+          </div>
+        </div>
+
+        <div class="top-bar__social">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram de Antônio Carlos" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="javascript:void(0)" onclick="openConciergeModal()" title="WhatsApp Direto de Antônio Carlos" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navegação Principal -->
+    <nav class="main-nav" aria-label="Navegação Principal">
+      <div class="container">
+        <a href="#inicio" class="logo-wrapper" title="Antônio Carlos - Consultoria de Viagens Nacionais">
+          <img src="assets/img/logo.svg" alt="Antônio Carlos - Viagens Nacionais" class="logo-img" width="420" height="80">
+        </a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#destinos" class="nav-link">Destinos no Brasil</a>
+          <a href="#curadoria" class="nav-link">Curadoria de Viagem</a>
+          <a href="#como-funciona" class="nav-link">Como Funciona</a>
+          <a href="#sobre" class="nav-link">O Agente</a>
+          <a href="javascript:void(0)" onclick="openConciergeModal()" class="btn btn-primary" style="display: none;" id="mobileCtaBtn">
+            <span>Planejar Roteiro</span>
+          </a>
+        </div>
+
+        <div class="nav-cta">
+          <button class="btn btn-outline" onclick="openConciergeModal()">
+            <span>Falar com o Agente</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION CINEMATOGRÁFICA (ESTILO TERESA PEREZ)
+       ======================================================================== -->
+  <main id="inicio">
+    <section class="hero-section">
+      <div class="hero-backdrop">
+        <img src="assets/img/hero-bg.jpg" alt="Litoral exuberante do Brasil" width="1920" height="1080">
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="display-title hero-title">
+            O Brasil mais extraordinário, desenhado <em>sob medida</em> para você.
+          </h1>
+          <p class="hero-subtitle">
+            Planejamento completo com a bagagem e curadoria de <strong>Antônio Carlos</strong>. Dos melhores hotéis-boutique ao aéreo, traslados privativos e experiências autênticas em qualquer recanto do território nacional.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="openConciergeModal()">
+              <span>Planejar Meu Roteiro</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="#destinos" class="btn btn-outline">
+              <span>Explorar Destinos</span>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <span class="hero-highlight-val">100%</span>
+              <span class="hero-highlight-lbl">Território Nacional</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="hero-highlight-val">Curadoria</span>
+              <span class="hero-highlight-lbl">De Ponta a Ponta</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="hero-highlight-val">Privativo</span>
+              <span class="hero-highlight-lbl">Aéreo, Hotéis & Tours</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Composição em Pílula Vertical Assinatura Teresa Perez -->
+        <div class="pill-frame-wrapper">
+          <div class="pill-frame pill-frame-main">
+            <img src="assets/img/dest-bahia.jpg" alt="Trancoso e praias da Bahia" width="600" height="900">
+          </div>
+          <div class="pill-frame pill-frame-secondary">
+            <img src="assets/img/dest-alagoas.jpg" alt="Águas transparentes de Alagoas" width="600" height="900">
+          </div>
+          <div class="pill-frame-accent">
+            <div class="pill-frame-accent-inner">
+              <span class="accent-number">+10</span>
+              <span class="accent-text">Anos de Bagagem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. SEÇÃO DE CURADORIA & DIFERENCIAIS (ESTILO BRONZE TERESA PEREZ)
+         ======================================================================== -->
+    <section class="curation-section" id="curadoria">
+      <div class="container">
+        <div class="curation-header">
+          <h2 class="display-title">
+            Muito mais que um pacote: a curadoria de quem <em>conhece cada detalhe</em>.
+          </h2>
+          <p>
+            Cada viajante possui um ritmo e desejos únicos. Como agente de turismo especializado no Brasil, Antônio Carlos pesquisa, compara e articula todos os componentes da sua viagem para garantir economia de tempo, máxima segurança e momentos memoráveis.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pilar 1: Hospedagem -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Hotéis & Pousadas Boutique</h3>
+            <p class="pillar-card__text">
+              Seleção criteriosa dos melhores resorts, eco-lodges e hospedagens de charme que oferecem serviço impecável, conforto e localização privilegiada.
+            </p>
+          </article>
+
+          <!-- Pilar 2: Logística e Aéreo -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2L11 13"></path>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Aéreo & Logística Integrada</h3>
+            <p class="pillar-card__text">
+              Pesquisa das melhores conexões nacionais, fretamentos privativos, helicópteros e pontualidade para que seus deslocamentos sejam fluidos e sem estresse.
+            </p>
+          </article>
+
+          <!-- Pilar 3: Transporte Privativo -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Transfers & Transporte Privado</h3>
+            <p class="pillar-card__text">
+              Veículos executivos com motoristas locais qualificados, passeios em lanchas e catamarãs privativos nos litorais e rios mais belos do país.
+            </p>
+          </article>
+
+          <!-- Pilar 4: Experiências & Passeios -->
+          <article class="pillar-card">
+            <div class="pillar-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="pillar-card__title">Passeios & Experiências Únicas</h3>
+            <p class="pillar-card__text">
+              Guias credenciados e experientes, reservas em restaurantes disputados, degustações em vinhedos e acesso privilegiado aos pontos turísticos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. VITRINE DE DESTINOS NACIONAIS COM FILTROS EM PÍLULA
+         ======================================================================== -->
+    <section class="destinations-section" id="destinos">
+      <div class="container">
+        <div class="destinations-header">
+          <div class="destinations-header-text">
+            <h2 class="display-title">
+              Onde o Brasil revela seus <em>maiores encantos</em>.
+            </h2>
+          </div>
+          <button class="btn btn-outline" onclick="openConciergeModal('Outro Destino Nacional')">
+            <span>Pedir Roteiro sob Medida</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Filtros por Região -->
+        <div class="filter-tabs" role="tablist">
+          <button class="filter-tab is-active" data-filter="todos">Todos os Destinos</button>
+          <button class="filter-tab" data-filter="sudeste">Sudeste (SP & RJ)</button>
+          <button class="filter-tab" data-filter="nordeste">Nordeste (Bahia, Alagoas & Sergipe)</button>
+          <button class="filter-tab" data-filter="sul">Sul (Rio Grande do Sul)</button>
+          <button class="filter-tab" data-filter="centro-oeste">Centro-Oeste (Brasília)</button>
+          <button class="filter-tab" data-filter="ilhas">Ilhas & Dunas (Noronha & Lençóis)</button>
+        </div>
+
+        <!-- Grade Dinâmica dos Destinos Renderizada via JS -->
+        <div class="destinations-grid" id="destinationsGrid">
+          <!-- Os cards são inseridos dinamicamente pelo arquivo js/filters.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. BANNER INSPIRACIONAL COM CITAÇÃO EDITORIAL
+         ======================================================================== -->
+    <section class="quote-section">
+      <div class="container container-narrow">
+        <svg class="quote-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2H4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h4c0 4-2 6-5 7v1z"></path>
+          <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.75-2-2-2h-4c-1.25 0-2 .75-2 2v6c0 1.25.75 2 2 2h4c0 4-2 6-5 7v1z"></path>
+        </svg>
+        <blockquote class="quote-text">
+          “Viajar pelo Brasil acompanhado por quem tem experiência real é a diferença entre visitar um ponto turístico e viver uma lembrança inesquecível para toda a vida.”
+        </blockquote>
+        <p class="quote-author">Antônio Carlos • Consultoria & Curadoria em Turismo</p>
+        <div style="margin-top: 2.5rem;">
+          <button class="btn btn-primary" onclick="openConciergeModal()">
+            <span>Converse com Antônio Carlos</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. SOBRE O AGENTE (ANTÔNIO CARLOS)
+         ======================================================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container about-grid">
+        <div class="about-photo-wrapper">
+          <div class="pill-frame pill-frame-main" style="width: 100%; max-width: 420px; height: 560px; margin: 0 auto;">
+            <img src="assets/img/antonio-carlos.jpg" alt="Antônio Carlos - Consultor de Turismo Especialista no Brasil" width="600" height="800">
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="display-title">
+            Antônio Carlos: <em>paixão</em> e profundidade pelos caminhos do Brasil.
+          </h2>
+          <p>
+            Com sólida trajetória de vivência, pesquisa e constante atualização pelo território nacional, Antônio Carlos não trabalha com pacotes prontos ou genéricos. Sua missão é entender as expectativas de cada pessoa, família ou casal para conceber a viagem ideal.
+          </p>
+          <p>
+            De hospedagens selecionadas minuciosamente a negociações de passagens aéreas, aluguel de transporte privativo e indicação de experiências gastronômicas raras: você viaja com a segurança de um suporte presente do início ao retorno.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Atendimento pessoal e humanizado</span>
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Cotação completa de aéreo e hospedagens</span>
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Roteiros dia a dia sob medida</span>
+            </div>
+            <div class="about-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Apoio e assistência durante toda a viagem</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+            <button class="btn btn-primary" onclick="openConciergeModal()">
+              <span>Iniciar Planejamento</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-social-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Seguir no Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. COMO FUNCIONA O ATENDIMENTO
+         ======================================================================== -->
+    <section class="steps-section" id="como-funciona">
+      <div class="container">
+        <div style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <h2 class="display-title">
+            Como funciona a consultoria com Antônio Carlos
+          </h2>
+          <p style="color: var(--text-secondary); margin-top: 1rem;">
+            Um processo transparente e detalhista que tira todas as dúvidas e constrói a viagem perfeita para você.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <!-- Passo 1 -->
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Conversa & Briefing</h3>
+            <p class="step-desc">
+              Pelo WhatsApp ou ligação, entendemos seu estilo, datas pretendidas, orçamento e preferências de hospedagem e experiências.
+            </p>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Curadoria & Cotações</h3>
+            <p class="step-desc">
+              Antônio Carlos seleciona os melhores voos, cota hotéis e pousadas parceiras de confiança e desenha opções personalizadas.
+            </p>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Ajustes & Confirmação</h3>
+            <p class="step-desc">
+              Você avalia a proposta, solicita os ajustes necessários e aprovamos cada reserva de transfer, passeios e estadias com total clareza.
+            </p>
+          </div>
+
+          <!-- Passo 4 -->
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h3 class="step-title">Embarque & Assistência</h3>
+            <p class="step-desc">
+              Você recebe seu voucher detalhado e conta com canal direto de suporte com Antônio Carlos para qualquer necessidade durante a jornada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. RODAPÉ DE ALTO LUXO
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/img/logo.svg" alt="Antônio Carlos - Consultoria de Viagens" width="340" height="65">
+          <p>
+            Consultoria e planejamento sob medida para viagens exclusivamente em território brasileiro. Experiência, serenidade e alto padrão para sua próxima viagem.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Destinos Principais</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Alagoas')">Alagoas</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Bahia')">Bahia</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Distrito Federal')">Distrito Federal</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Maranhão')">Maranhão</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Pernambuco')">Pernambuco</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Rio de Janeiro')">Rio de Janeiro</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Rio Grande do Sul')">Rio Grande do Sul</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('São Paulo')">São Paulo</a></li>
+            <li><a href="javascript:void(0)" onclick="openConciergeModal('Sergipe')">Sergipe</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#destinos">Galeria de Destinos</a></li>
+            <li><a href="#curadoria">Pilares de Curadoria</a></li>
+            <li><a href="#como-funciona">Processo de Atendimento</a></li>
+            <li><a href="#sobre">Sobre Antônio Carlos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Canais Oficiais</h4>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1.25rem;">
+            Entre em contato direto com Antônio Carlos para consultar datas, cotações e recomendações personalizadas:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <button class="btn btn-primary" onclick="openConciergeModal()" style="width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>Falar no WhatsApp</span>
+            </button>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-social-gold" style="width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span>Acompanhar Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Antônio Carlos • Consultoria de Viagens Nacionais. Todos os direitos reservados.</span>
+        <span>Especialista Dedicado Exclusivamente ao Território Brasileiro.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       9. MODAL INTERATIVO: MONTE SEU ROTEIRO SOB MEDIDA
+       ======================================================================== -->
+  <div class="modal-backdrop" id="conciergeModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeConciergeModal()" aria-label="Fechar janela">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <h3 class="display-title" id="modalHeading" style="font-size: 2rem; margin-bottom: 0.5rem;">
+        Planeje sua Próxima Viagem pelo Brasil
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 2rem;">
+        Preencha os detalhes abaixo para receber uma consultoria personalizada via WhatsApp sem compromisso.
+      </p>
+
+      <form id="conciergeForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Seu Nome Completo</label>
+          <input type="text" id="modalName" class="form-input" placeholder="Ex: Roberto Silveira" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalDestination">Destino de Interesse no Brasil</label>
+          <select id="modalDestination" class="form-select">
+            <option value="A definir">A definir (Recomendação do Antônio Carlos)</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Outro Estado">Outro Estado do Brasil</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="modalStyle">Estilo de Viagem</label>
+            <select id="modalStyle" class="form-select">
+              <option value="Lua de Mel & Romântico">Lua de Mel & Romântico</option>
+              <option value="Viagem em Família">Viagem em Família</option>
+              <option value="Praias & Pousadas Boutique">Praias & Pousadas Boutique</option>
+              <option value="Gastronomia & Vinhedos">Gastronomia & Vinhedos</option>
+              <option value="Ecoturismo & Natureza Rara">Ecoturismo & Natureza Rara</option>
+              <option value="Viagem Executiva / Cultural">Viagem Executiva / Cultural</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="modalTravelers">Passageiros</label>
+            <select id="modalTravelers" class="form-select">
+              <option value="1 pessoa">1 pessoa</option>
+              <option value="2 pessoas (Casal)" selected>2 pessoas (Casal)</option>
+              <option value="3 a 4 pessoas">3 a 4 pessoas</option>
+              <option value="5 ou mais pessoas">5 ou mais pessoas</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Período da Viagem: Calendário com Dia, Mês e Ano + Digitação Livre -->
+        <div class="form-group">
+          <label class="form-label">Período Previsto ou Datas Desejadas</label>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 0.65rem;">
+            <div>
+              <label class="form-label" for="modalStartDate" style="font-size: 0.72rem; color: var(--text-muted); text-transform: none; margin-bottom: 0.25rem;">Data de Início / Embarque</label>
+              <input type="date" id="modalStartDate" class="form-input">
+            </div>
+            <div>
+              <label class="form-label" for="modalEndDate" style="font-size: 0.72rem; color: var(--text-muted); text-transform: none; margin-bottom: 0.25rem;">Data de Retorno / Fim</label>
+              <input type="date" id="modalEndDate" class="form-input">
+            </div>
+          </div>
+          <input type="text" id="modalPeriodText" class="form-input" placeholder="Ou digite o período livremente (ex: Segunda quinzena de Julho)">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalNotes">Desejos Especiais ou Observações</label>
+          <textarea id="modalNotes" class="form-textarea" rows="2" placeholder="Ex: Preferência por hotel pé na areia, interesse em voos privativos, passeios de lancha..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>Conversar Agora no WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       10. FLOATING CONCIERGE WIDGET
+       ======================================================================== -->
+  <div class="floating-concierge" id="floatingConcierge">
+    <div class="floating-menu">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-social-gold" style="padding: 0.65rem 1.25rem; font-size: 0.78rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Instagram Oficial</span>
+      </a>
+      <button class="btn btn-primary" onclick="openConciergeModal()" style="padding: 0.65rem 1.25rem; font-size: 0.78rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>WhatsApp Concierge</span>
+      </button>
+    </div>
+
+    <button class="floating-trigger" id="floatingTrigger" aria-label="Abrir canais de contato com Antônio Carlos">
+      <div class="icon-pulse">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width: 13px; height: 13px;">
+          <polygon points="12 2 19 21 12 17 5 21 12 2"></polygon>
+        </svg>
+      </div>
+      <span>Fale com Antônio Carlos</span>
+    </button>
+  </div>
+
+  <!-- Scripts Modulares -->
+  <script src="js/destinations-data.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/concierge-modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

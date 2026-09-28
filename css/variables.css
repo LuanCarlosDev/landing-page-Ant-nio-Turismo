@@ -1,0 +1,69 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIÁVEIS DO SISTEMA
+   Identidade: Antônio Carlos - Consultoria de Viagens Nacionais
+   Inspirado no padrão editorial de luxo Teresa Perez
+   ========================================================================== */
+
+:root {
+  /* Paleta Nobre & Tons de Fundo */
+  --bg-primary: #0D1215;
+  --bg-secondary: #141A1E;
+  --bg-surface: #1B2228;
+  --bg-surface-elevated: #232C33;
+  --bg-bronze: #5C4B33;
+  --bg-bronze-dark: #413421;
+  --bg-bronze-light: #7A6546;
+  --bg-light: #F7F5F0;
+  --bg-light-surface: #FFFFFF;
+
+  /* Cores de Acento & Ouro Champanhe */
+  --gold-primary: #C5A059;
+  --gold-light: #E5C98E;
+  --gold-dark: #9A7733;
+  --gold-subtle: rgba(197, 160, 89, 0.15);
+  --gold-border: rgba(197, 160, 89, 0.32);
+  --gold-border-hover: rgba(229, 201, 142, 0.85);
+
+  /* Gradientes Sofisticados */
+  --gold-gradient: linear-gradient(135deg, #F3DC9E 0%, #C5A059 50%, #9C7733 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #FFF1C5 0%, #D8B26E 50%, #B88E43 100%);
+  --bronze-gradient: linear-gradient(145deg, #6E5A3D 0%, #4D3D27 100%);
+  --dark-overlay-top: linear-gradient(180deg, rgba(13, 18, 21, 0.85) 0%, rgba(13, 18, 21, 0.2) 60%, rgba(13, 18, 21, 0) 100%);
+  --dark-overlay-bottom: linear-gradient(0deg, rgba(13, 18, 21, 1) 0%, rgba(13, 18, 21, 0.88) 35%, rgba(13, 18, 21, 0) 100%);
+  --card-overlay: linear-gradient(180deg, rgba(20, 26, 30, 0.05) 0%, rgba(13, 18, 21, 0.7) 60%, rgba(13, 18, 21, 0.98) 100%);
+
+  /* Cores de Texto */
+  --text-primary: #FFFFFF;
+  --text-secondary: #D4CEBF;
+  --text-muted: #8F8A7E;
+  --text-gold: #DFC48D;
+  --text-dark: #1A1F24;
+
+  /* Tipografia Editorial */
+  --font-display: 'Cormorant Garamond', 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Espaçamentos e Estrutura */
+  --container-max-width: 1340px;
+  --container-padding: clamp(1.25rem, 4vw, 3rem);
+  --section-spacing: clamp(4.5rem, 8vw, 8rem);
+
+  /* Raios de Borda */
+  --radius-pill: 9999px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+
+  /* Elevações e Sombras */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 24px 55px rgba(0, 0, 0, 0.55);
+  --shadow-gold: 0 10px 30px rgba(197, 160, 89, 0.25);
+  --shadow-gold-hover: 0 16px 40px rgba(229, 201, 142, 0.38);
+
+  /* Transições Suaves de Alto Nível */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80" fill="none">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2D898"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#9C7733"/>
+    </linearGradient>
+    <linearGradient id="subtleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Monograma Simbólico AC & Rosa dos Ventos Nobre -->
+  <g transform="translate(10, 8)">
+    <!-- Círculo externo fino e elegante -->
+    <circle cx="32" cy="32" r="30" stroke="url(#goldGrad)" stroke-width="1.2" stroke-opacity="0.8" stroke-dasharray="3 3"/>
+    <circle cx="32" cy="32" r="26" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+    <!-- Rosa dos ventos estilizada central -->
+    <polygon points="32,9 35,29 55,32 35,35 32,55 29,35 9,32 29,29" fill="url(#goldGrad)" fill-opacity="0.15"/>
+    <polygon points="32,14 34,30 50,32 34,34 32,50 30,34 14,32 30,30" fill="url(#goldGrad)" fill-opacity="0.25"/>
+
+    <!-- Letras 'A' e 'C' entrelaçadas refinadas -->
+    <!-- Letra A -->
+    <path d="M26 44 L32 20 L38 44" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="28.5" y1="36" x2="35.5" y2="36" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Letra C envolvendo a base do A -->
+    <path d="M41 26 C37 22 23 23 21 34 C19 44 32 47 42 42" stroke="url(#goldGrad)" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- Ponto cardeal norte em ouro -->
+    <circle cx="32" cy="7" r="2" fill="#F2D898"/>
+  </g>
+
+  <!-- Tipografia de Luxo -->
+  <g transform="translate(85, 23)">
+    <!-- Nome Principal -->
+    <text x="0" y="24" font-family="'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'Georgia', serif" font-size="24" font-weight="600" letter-spacing="4.5" fill="#FFFFFF">
+      ANTÔNIO CARLOS
+    </text>
+    
+    <!-- Linha divisória de requinte com detalhes em losango -->
+    <line x1="0" y1="32" x2="285" y2="32" stroke="url(#goldGrad)" stroke-width="0.8" stroke-opacity="0.6"/>
+    <rect x="140" y="30.5" width="3" height="3" transform="rotate(45 141.5 32)" fill="#F2D898"/>
+
+    <!-- Especialidade / Posicionamento Exclusivo -->
+    <text x="1.5" y="44" font-family="'Outfit', 'Plus Jakarta Sans', 'Inter', sans-serif" font-size="8.5" font-weight="400" letter-spacing="3.2" fill="#D8BE8A">
+      VIAGENS NACIONAIS <tspan fill="#C5A059">•</tspan> EXPERIÊNCIAS NO BRASIL
+    </text>
+  </g>
+</svg>
